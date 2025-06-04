@@ -1,0 +1,68 @@
+/* src/app/app.component.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .uuid-display {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limita a largura */
+
+    h2 {
+      color: #007bff;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      word-wrap: break-word; /* Quebra o texto se for muito longo */
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.2em;
+      color: #555;
+    }
+  }
+
+  .error-message {
+    margin-top: 20px;
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+}

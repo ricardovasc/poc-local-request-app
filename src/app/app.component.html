@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <button (click)="getNewUniqueId()">Gerar Novo UUID</button>
+
+  <div *ngIf="uniqueId" class="uuid-display">
+    <h2>UUID Recebido:</h2>
+    <p>{{ uniqueId }}</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>
